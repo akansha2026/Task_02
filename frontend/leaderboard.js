@@ -6,7 +6,7 @@ const searchInput = document.querySelector('.topbar input');
 let users = [];
 
 const getLeaderboard = async () => {
-    const response = await fetch('http://localhost:8080/api/leaderboard');
+    const response = await fetch('https://codechef-companion.onrender.com/api/leaderboard');
     const data = await response.json();
     return data;
 };

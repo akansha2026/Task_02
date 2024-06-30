@@ -2,7 +2,7 @@ const searchButton = document.querySelector('.topbar button');
 const searchInput = document.querySelector('.topbar input');
 
 const getProfile = async (handle) => {
-    const response = await fetch(`http://localhost:8080/api/${handle}/profile`);
+    const response = await fetch(`https://codechef-companion.onrender.com/api/${handle}/profile`);
     const data = await response.json();
     return data[0]
 };

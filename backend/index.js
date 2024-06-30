@@ -11,8 +11,7 @@ dotenv.config();
 
 // Configure cors
 const corsOptions = {
-    origin: 'http://127.0.0.1:5500', // Allow frontend to access the server
-    AccessControlAllowOrigin: 'http://127.0.0.1:5500',
+    origin: '*', // Allow all origins
 }
 
 // Set up the express app
